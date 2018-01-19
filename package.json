@@ -20,6 +20,10 @@
   "bugs": {
     "url": "https://github.com/artixx/radar/issues"
   },
+  "engines": {
+    "node": "^9.2.0",
+    "npm": "^5.6.0"
+  },
   "devDependencies": {
     "cross-env": "^5.1.2",
     "eslint": "^4.13.1",

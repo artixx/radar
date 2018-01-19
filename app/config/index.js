@@ -13,7 +13,12 @@ if (!existsSync(configUserPath)) {
 }
 
 if (!existsSync(configUserFullPath)) {
-    if (environment) {
+    if (environment === 'heroku') {
+        writeFileSync(
+            configUserFullPath,
+            JSON.stringify({ port: process.env.PORT }) + '\n',
+        )
+    } else if (environment) {
         throw new Error(`Не найден файл конфига ${configUserName} для окружения ${environment}`)
     } else {
         writeFileSync(configUserFullPath, '{}\n')
