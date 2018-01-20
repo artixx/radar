@@ -6,7 +6,9 @@
   "author": "artix",
   "license": "Apache-2.0",
   "main": "app/index.js",
-  "keywords": ["2ch"],
+  "keywords": [
+    "2ch"
+  ],
   "scripts": {
     "config": "node app/config",
     "start": "node app",
